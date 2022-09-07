@@ -11,7 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.quotesWrapper{
+
+.quotesWrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -20,14 +21,18 @@ code {
   background-color: blueviolet;
 }
 
-.quoteBlock{
+.quoteBlock {
   width: 700px;
+  height: 200px;
   padding: 40px;
   background-color: #fff;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.quote .quote__text{
+.quote .quote__text {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -35,7 +40,7 @@ code {
   position: relative;
 }
 
-.quote__text::before{
+.quote__text::before {
   content: "''";
   position: absolute;
   top: 10px;
@@ -43,13 +48,14 @@ code {
   color: #000;
   font-size: 60px;
 }
-.quote .quote__author{
+
+.quote .quote__author {
   text-align: right;
   margin-bottom: 10px;
   font-size: 18px;
 }
 
-.next-quote{
+.next-quote {
   padding: 10px 20px;
   color: #fff;
   background-color: blueviolet;
@@ -57,5 +63,5 @@ code {
   border-radius: 5px;
   font-size: 15px;
   cursor: pointer;
+  width: 150px;
 }
-

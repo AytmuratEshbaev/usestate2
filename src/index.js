@@ -10,16 +10,15 @@ class Quotes extends React.Component {
         this.state = {
             index: 0
         }
-        this.handleCLick = this.handleCLick.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    handleCLick() {
-        // let index = this.state.index;
-        // index = (index + 1) % data.length;
-        // this.setState({
-        //     index: index
-        // })
-        console.log("Hello")
+    handleClick() {
+        let index = this.state.index;
+        index = (index + 1) % data.length;
+        this.setState({
+            index: index
+        })
     }
     render() {
         const quote = data[this.state.index];
